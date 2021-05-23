@@ -1,0 +1,123 @@
+        body {
+            font-family: sans-serif;
+            background-image: url(call.jpg);
+            background-size: cover;
+            text-align: center;
+        }
+        
+        h1 {
+            font-style: italic;
+            font-size: 20px;
+            color: rgb(70, 30, 30);
+            text-align: center;
+        }
+        
+        #container {
+            width: 1000px;
+            height: 650px;
+            background-image: linear-gradient(rgba(0, 0, 00.3), rgba(0, 0, 0, 0.3)), url(cal.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            margin: 50px auto;
+        }
+        
+        #calculator {
+            width: 340px;
+            height: 600px;
+            background-color: rgb(170, 206, 211);
+            margin: 0px auto;
+            top: 20px;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: rgb(117, 117, 163);
+        }
+        
+        #result {
+            height: 180px;
+        }
+        
+        #history {
+            text-align: right;
+            height: 80px;
+            margin: 10px 20px;
+            padding-top: 20px;
+            font-size: 30px;
+            color: black;
+        }
+        
+        #output {
+            text-align: right;
+            height: 80px;
+            margin: 10px 20px;
+            font-size: 40px;
+        }
+        
+        #keyboard {
+            height: 500px;
+        }
+        
+        .operator,
+        .number,
+        .empty {
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+            float: left;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        .number,
+        .empty {
+            background-color: #eaedef;
+        }
+        
+        .number,
+        .operator {
+            cursor: pointer;
+        }
+        
+        .operator:active,
+        .number:active {
+            font-size: 13px;
+        }
+        
+        .operator:focus,
+        .number:focus,
+        .empty:focus {
+            outline: 0;
+        }
+        
+        button:nth-child(4) {
+            font-size: 20px;
+            background-color: #d16a6a;
+        }
+        
+        button:nth-child(8) {
+            font-size: 20px;
+            background-color: #ffa500;
+        }
+        
+        button:nth-child(12) {
+            font-size: 20px;
+            background-color: #f08080;
+        }
+        
+        button:nth-child(16) {
+            font-size: 20px;
+            background-color: #7d93e0;
+        }
+        
+        button:nth-child(20) {
+            font-size: 20px;
+            background-color: #9477af;
+        }
+        
+        @media(max-width: 600px) {
+            #container {
+                height: auto;
+                width: auto;
+            }
+        }
